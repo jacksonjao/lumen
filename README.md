@@ -8,6 +8,8 @@ Samsung TVs** that feel slow or crowded, and it runs well on their old browser e
 
 ![Home with movie images](docs/screenshots/home.jpg)
 
+Read the story behind it: [How I cleaned up my Samsung TV and made it feel modern again](https://medium.com/@jhonosorio/how-i-cleaned-up-my-samsung-tv-and-made-it-feel-modern-again-a81cdd173563) · [en español](https://medium.com/@jhonosorio/c%C3%B3mo-limpi%C3%A9-mi-televisor-samsung-y-lo-volv%C3%AD-a-sentir-moderno-8d1bd5a9f928)
+
 ## Screenshots
 
 | | |
