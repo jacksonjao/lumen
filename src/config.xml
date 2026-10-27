@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets"
+        id="http://glass.local/launcher" version="1.0.0" viewmodes="maximized">
+    <!-- El paquete debe tener exactamente 10 caracteres alfanuméricos. No lo cambies entre
+         versiones o el TV lo tratará como otra app (y perderás el orden guardado). -->
+    <tizen:application id="GlassLnch1.Glass" package="GlassLnch1" required_version="2.3"/>
+    <content src="index.html"/>
+    <icon src="icon.png"/>
+    <name>Lumen</name>
+
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.info"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.window"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+    <!-- Títulos e imágenes de TMDB para el Top Shelf -->
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <access origin="https://api.themoviedb.org" subdomains="false"/>
+    <access origin="https://image.tmdb.org" subdomains="false"/>
+
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="landscape" context-menu="disable"
+                   background-support="disable" encryption="disable"
+                   install-location="auto" hwkey-event="enable"/>
+</widget>

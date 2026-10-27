@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1920, user-scalable=no">
+    <title>Lumen</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="stage">
+    <!-- Fondo: dos capas que se funden entre sí; el vidrio del resto de la interfaz usa las mismas dos -->
+    <div class="bg">
+        <div class="L a" data-img="sharp"></div>
+        <div class="L b" data-img="sharp"></div>
+        <div class="shade"></div>
+        <div class="art-shade"></div>
+        <div class="art-boost"></div>
+        <div class="grain"></div>
+    </div>
+
+    <header class="topbar">
+        <div class="glass pill clock">
+            <span class="clock-time" id="clock-time"></span>
+            <span class="clock-date" id="clock-date"></span>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="copy a"><div class="eyebrow"></div><h1 class="title"></h1><p class="blurb"></p></div>
+        <div class="copy b"><div class="eyebrow"></div><h1 class="title"></h1><p class="blurb"></p></div>
+    </section>
+    <div class="dots" id="dots"></div>
+
+    <div class="art-wrap">
+        <div class="art-float">
+            <div class="art a"></div>
+            <div class="art b"></div>
+        </div>
+    </div>
+
+    <div class="scroll-dim"></div>
+
+    <!-- Toda la cuadrícula de Inicio; sube cuando el foco baja de la primera fila -->
+    <div class="page" id="page"><div class="glass shelf" id="shelf"></div><div class="grid" id="grid"></div></div>
+
+    <div class="edit-hint glass pill" id="edit-hint">
+        <span><b>Flechas</b> Mover</span><span><b>Mantén OK</b> Ocultar</span><span><b>OK</b> Listo</span>
+    </div>
+
+    <!-- Todas las apps -->
+    <section class="library" id="library">
+        <div class="lib-bg"><div class="L a" data-img="glass"></div><div class="L b" data-img="glass"></div></div>
+        <div class="lib-head">
+            <h2>Apps</h2>
+            <p id="lib-sub"></p>
+        </div>
+        <div class="lib-view"><div class="lib-grid" id="lib-grid"></div></div>
+    </section>
+
+    <!-- Ajustes -->
+    <aside class="glass panel" id="panel">
+        <h2>Ajustes</h2>
+        <div class="opts-view"><div class="opts" id="opts"></div></div>
+        <div class="about" id="about"></div>
+    </aside>
+
+    <div class="glass pill toast" id="toast"></div>
+
+    <div class="veil" id="veil"><div class="veil-mark"></div></div>
+
+    <!-- Fondos ya decodificados, listos para el primer paso por cada app -->
+    <div class="warm" id="warm"></div>
+
+    <div class="saver" id="saver">
+        <div class="saver-img"></div>
+        <div class="saver-img"></div>
+        <div class="saver-shade"></div>
+        <div class="saver-boost info"></div>
+        <div class="saver-boost clock"></div>
+        <div class="saver-clock"><div id="saver-time"></div><div id="saver-date"></div></div>
+        <div class="saver-info" id="saver-info"><div class="eyebrow"></div><div class="title"></div><p class="blurb"></p></div>
+    </div>
+</div>
+
+<script src="$WEBAPIS/webapis/webapis.js"></script>
+<script src="js/config.local.js"></script>
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/marks.js"></script>
+<script src="js/brands.js"></script>
+<script src="js/tmdb.js"></script>
+<script src="js/platform.js"></script>
+<script src="js/aurora.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

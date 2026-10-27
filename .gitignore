@@ -1,0 +1,5 @@
+dist/
+.DS_Store
+src/js/config.local.js
+backup-diseno-original/
+.claude/
