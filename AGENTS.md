@@ -10,8 +10,10 @@ These notes help Claude Code, Codex and similar assistants install it for a user
 2. Make sure the user turned on **Developer Mode** on the TV with this computer's IP as **Host PC IP**,
    and restarted the TV. Only the user can do this (Apps > press 1 2 3 4 5 on the remote). Tell them
    this computer's local IP so they can type it.
-3. Check that Docker is installed and running (`docker info`). If not, ask the user to install
-   Docker Desktop (or OrbStack on a Mac). Do not install it without asking.
+3. Check that Docker is installed and running (`docker info`). If not, ask the user to install it.
+   On macOS recommend OrbStack (https://orbstack.dev, `brew install orbstack`): lighter than Docker
+   Desktop and fast with the amd64 Tizen image on Apple Silicon. On Windows, Docker Desktop.
+   Do not install anything without asking.
 4. Run `sh scripts/install.sh <TV_IP>`. The first run downloads a large Docker image and can
    take several minutes. On Apple Silicon the image runs under emulation; that is expected.
 5. Optional TMDB key (movie and show images): the user gets a free key at themoviedb.org > Settings > API.

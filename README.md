@@ -84,9 +84,14 @@ También le puedes pedir cambios: otros colores, nuevos logos, otro orden de app
 
 ### Instalar a mano
 
-Necesitas un computador (Mac, Linux o Windows) en la misma red del TV y
-[Docker](https://www.docker.com/products/docker-desktop/) (en Mac también sirve [OrbStack](https://orbstack.dev)).
+Necesitas un computador (Mac, Linux o Windows) en la misma red del TV y Docker.
 **No** necesitas Tizen Studio: el script usa las herramientas de Tizen dentro de Docker.
+
+- **Mac**: te recomiendo [OrbStack](https://orbstack.dev) en vez de Docker Desktop. Es más liviano,
+  arranca en segundos y corre muy bien la imagen de Tizen en los Mac con chip Apple (M1, M2…).
+  Es gratis para uso personal. Instálalo, ábrelo una vez y listo: el comando `docker` ya funciona.
+- **Windows**: [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+- **Linux**: Docker Engine o Docker Desktop.
 
 #### 1. Activa el Modo Desarrollador en el TV (una sola vez)
 
@@ -225,9 +230,14 @@ You can also ask it for changes: other colors, new logos, another app order, ano
 
 ### Install by hand
 
-You need a computer (Mac, Linux or Windows) on the same network as the TV, and
-[Docker](https://www.docker.com/products/docker-desktop/) (on a Mac, [OrbStack](https://orbstack.dev) also works).
+You need a computer (Mac, Linux or Windows) on the same network as the TV, and Docker.
 You do **not** need Tizen Studio: the script uses the Tizen tools inside Docker.
+
+- **Mac**: I recommend [OrbStack](https://orbstack.dev) instead of Docker Desktop. It is lighter,
+  starts in seconds and runs the Tizen image well on Apple chip Macs (M1, M2…). It is free for
+  personal use. Install it, open it once and that's it: the `docker` command works.
+- **Windows**: [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+- **Linux**: Docker Engine or Docker Desktop.
 
 #### 1. Turn on Developer Mode on the TV (only once)
 
